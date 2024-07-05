@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSTEOS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div id="form-container" class="container mt-4">
+        <h1>POSTEOS</h1>
+<!--     Formulario para crear un nuevo posteo -->
+     <form  id="form-crear-posteos">
+<label for="nuevo-titulo">Titulo:</label>
+<input type="text" name="titulo" id="nuevo-titulo" required>
+<br>
+<label for="nuevo-contenido">Contenido:</label>
+<textarea name="contenido" id="nuevo-contenido" required></textarea>
+<br>
+<button type="submit">CREAR POSTEO</button>
+     </form>
+
+<!--      tabla para mostrar todos los posteos -->
+
+<div class="container">
+    <h1 class="mt-4">Lista de Items</h1>
+    <table class="table table-striped mt-4">
+        <thead class="thead-dark">
+            <th>Titulo</th>
+            <th>Contenido</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody id="body-tabla-posteos">
+<!--         aca es donde se agregan los posteos -->
+    </tbody>
+</table></div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+</div></body>
+</html>
